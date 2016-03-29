@@ -4,19 +4,19 @@ export default Ember.Component.extend({
   addNewRental: false,
   actions: {
     rentalFormShow() {
-      this.set('addNewRental', true)
+      this.set('addNewRental', true);
     },
 
-    save1() {
-      var userInput= {
+    saveRental() {
+      var userInput = {
         owner: this.get('owner'),
         city: this.get('city'),
         type: this.get('type'),
         image: this.get('image'),
-        bedrooms: this.get('bedrooms'),
+        bedrooms: this.get('bedrooms')
       };
-      this.set('addNewRental', false),
-      this.sendActions('saveRental', userInput);
+      this.set('addNewRental', false);
+      this.sendAction('saveRental', userInput);
     }
   }
 });

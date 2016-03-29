@@ -1,0 +1,12 @@
+<h1>Exciting New!</h1>
+<ul>
+  {{#each model as |announcement|}}
+    {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+  {{/each}}
+</ul>
+
+{{new-announcement addAnnouncement="addAnnouncement"}}
+
+{{#link-to 'about'}}About us over here.{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+{{#link-to 'index'}}Go HOme!{{/link-to}}
