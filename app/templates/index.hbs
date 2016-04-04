@@ -7,11 +7,9 @@
   <br>
 <ul>
   {{#each model.rentals as |rental|}}
-    {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}
+    {{rental-tile rental=rental}}
   {{/each}}
 </ul>
-
-{{new-rental saveRental="saveRental"}}
 
 <h2>Cities</h2>
 

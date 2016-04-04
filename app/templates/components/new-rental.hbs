@@ -22,9 +22,10 @@
         {{input value=image id="image"}}
       </div>
 
-      <button {{action 'saveRental'}}>Save</button>
+      <button {{action 'save1'}}>Save</button>
     </form>
   </div>
 {{else}}
+  <br>
     <button {{action 'rentalFormShow'}}>New Rental</button>
 {{/if}}
