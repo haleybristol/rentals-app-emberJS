@@ -1,6 +1,7 @@
 <h3>Available Rentals in {{fullLocation}}</h3>
   <ul>
     {{#each sortedRentals as |rental|}}
+      {{rental-tile rental=rental}}
       <li>
         {{#link-to 'rental' rental.id}}
           {{rental.owner}}'s {{rental.bedrooms}} Bedroom {{rental.type}}
