@@ -1,16 +1,28 @@
 <h1> Welcome to Super Rentals </h1>
-
-We hope you find exactly what you're looking for in a place to stay.
-
+  <br>
+  We hope you find exactly what you're looking for in a place to stay.
+  <br>
+  Search Our available rentals below.
+  <br>
+  <br>
 <ul>
-  {{#each model as |rental|}}
+  {{#each model.rentals as |rental|}}
     {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}
   {{/each}}
 </ul>
 
 {{new-rental saveRental="saveRental"}}
 
+<h2>Cities</h2>
 
-{{#link-to 'about'}}About us over here.{{/link-to}}
+<ul>
+  {{#each model.cities as |city|}}
+   <li>{{#link-to 'city' city.id}}{{city.name}} =^.^= {{city.country}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+  {{new-city save5="save6"}}
+<hr>
+
+{{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
 {{#link-to 'announcement'}}Read V important announcements here.{{/link-to}}

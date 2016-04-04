@@ -1,0 +1,13 @@
+<h2>Location: {{fullLocation}}</h2>
+
+<h3>Rentals in {{city.name}}</h3>
+  <ul>
+    {{#each sortedRentals as |rental|}}
+      <li>
+        {{#link-to 'rental' rental.id}}
+          {{rental.bedrooms}} Bedroom - {{rental.type}}
+        {{/link-to}}
+      </li>
+      {{/each}}
+</ul>
+<button {{action 'delete' city}}>Delete</button>

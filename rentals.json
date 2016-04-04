@@ -25,6 +25,12 @@
         "sales": "dope haus",
         "weather": "cloudz",
         "news": "on sale"
-      }
-      ]
+      }],
+    "cities": [{
+      "name": "Portland",
+      "country": "USA"
+    }, {
+      "name": "Seattle",
+      "country": "USA"
+    }]
 }
