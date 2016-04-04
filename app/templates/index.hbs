@@ -2,12 +2,12 @@
   <br>
   We hope you find exactly what you're looking for in a place to stay.
   <br>
-  Search Our available rentals below.
+  Search our rentals available in the cities below.
   <br>
   <br>
 <ul>
   {{#each model.rentals as |rental|}}
-    {{rental-tile rental=rental}}
+    {{rental-tile rental=rental}} {{rental-cost rental}}
   {{/each}}
 </ul>
 
@@ -15,7 +15,7 @@
 
 <ul>
   {{#each model.cities as |city|}}
-   <li>{{#link-to 'city' city.id}}{{city.name}} =^.^= {{city.country}}{{/link-to}}</li>
+   <li>{{city-popularity city}} {{#link-to 'city' city.id}}{{city.name}} =^.^= {{city.country}}{{/link-to}}</li>
   {{/each}}
 </ul>
   {{new-city save5="save6"}}

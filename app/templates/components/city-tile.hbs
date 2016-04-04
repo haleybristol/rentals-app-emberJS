@@ -1,14 +1,11 @@
-<h2>Location: {{fullLocation}}</h2>
-
-<h3>Rentals in {{city.name}}</h3>
+<h3>Available Rentals in {{fullLocation}}</h3>
   <ul>
     {{#each sortedRentals as |rental|}}
       <li>
         {{#link-to 'rental' rental.id}}
-          {{rental.bedrooms}} Bedroom - {{rental.type}}
+          {{rental.owner}}'s {{rental.bedrooms}} Bedroom {{rental.type}}
         {{/link-to}}
       </li>
       {{/each}}
 </ul>
-<br>
 <button {{action 'delete' city}}>Delete</button>
