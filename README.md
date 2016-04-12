@@ -1,7 +1,6 @@
 # Rental-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a web application developed using Ember. It stores data using EmberData and it pulls hard-coded data from firebase. The app uses custom helpers, computed properties and dynamic routing.
 
 ## Prerequisites
 
