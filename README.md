@@ -1,4 +1,4 @@
-# Rental-app
+# Housing Rentals Admin Site
 
 This is a web application developed using Ember. It stores data using EmberData and it pulls hard-coded data from firebase. The app uses custom helpers, computed properties and dynamic routing.
 
